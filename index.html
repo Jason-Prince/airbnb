@@ -21,7 +21,7 @@
     <!-- Tell iOS not to automatically link certain text strings. -->
     <meta name="color-scheme" content="light" />
     <meta name="supported-color-schemes" content="light" />
-    <title></title>
+    <title>Ones for the wishlist</title>
     <!--   The title tag shows in email notifications, like Android 4.4. -->
 
     <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
@@ -176,19 +176,23 @@
       }
       .button-td-primary:hover,
       .button-a-primary:hover {
-        background: #555555 !important;
-        border-color: #555555 !important;
+        background: #222222 !important;
+        border-color: #222222 !important;
+        color: #ffffff !important;
       }
 
       /* Media Queries */
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 638px) {
         /* What it does: Adjust typography on small screens to improve readability */
         .email-container p {
           font-size: 17px !important;
         }
       }
+      /* * {
+        outline: 1px solid red;
+      } */
     </style>
-    <!-- Progressive Enhancements : END -->
+    <!-- Prc:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.htmlogressive Enhancements : END -->
   </head>
   <!--
 	The email background color (#222222) is defined in three places:
@@ -202,14 +206,14 @@
       margin: 0;
       padding: 0 !important;
       mso-line-height-rule: exactly;
-      background-color: #222222;
+      background-color: #ffffff;
     "
   >
     <center
       role="article"
       aria-roledescription="email"
       lang="en"
-      style="width: 100%; background-color: #222222"
+      style="width: 100%; background-color: #ffffff"
     >
       <!--[if mso | IE]>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #222222;">
@@ -222,14 +226,10 @@
         style="max-height: 0; overflow: hidden; mso-hide: all"
         aria-hidden="true"
       >
-        (Optional) This text will appear in the inbox preview, but not the email
-        body. It can be used to supplement the email subject line or even
-        summarize the email's contents. Extended text preheaders (~490
-        characters) seems like a better UX for anyone using a screenreader or
-        voice-command apps like Siri to dictate the contents of an email. If
-        this text is not included, email clients will automatically populate it
-        using the text (including image alt text) at the start of the email's
-        body.
+        Sometimes, the best gift is one you can look forward to for a few
+        months. Get ahead of your family’s holiday plans with these
+        categories—from cozy mountain marvels with a hot tub to refreshing
+        tropical escapes with private pools.
       </div>
       <!-- Visually Hidden Preheader Text : END -->
 
@@ -257,9 +257,18 @@
             1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
             2. MSO tags for Desktop Windows Outlook enforce a 600px width.
         -->
-      <div style="max-width: 600px; margin: 0 auto" class="email-container">
+      <div
+        style="
+          max-width: 638px;
+          margin: 0 auto;
+          border: 1px solid #dddddd;
+          border-radius: 12px;
+          padding: 3px;
+        "
+        class="email-container"
+      >
         <!--[if mso]>
-            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="638">
             <tr>
             <td>
             <![endif]-->
@@ -272,42 +281,20 @@
           cellpadding="0"
           border="0"
           width="100%"
-          style="margin: auto"
+          style="margin: auto; background-color: #ffffff"
         >
-          <!-- Email Header : BEGIN -->
-          <tr>
-            <td style="padding: 20px 0; text-align: center">
-              <img
-                src="https://via.placeholder.com/200x50"
-                width="200"
-                height="50"
-                alt="alt_text"
-                border="0"
-                style="
-                  height: auto;
-                  background: #dddddd;
-                  font-family: sans-serif;
-                  font-size: 15px;
-                  line-height: 15px;
-                  color: #555555;
-                "
-              />
-            </td>
-          </tr>
-          <!-- Email Header : END -->
-
-          <!-- Hero Image, Flush : BEGIN -->
+          <!-- Logo Image : BEGIN -->
           <tr>
             <td style="background-color: #ffffff">
               <img
-                src="https://via.placeholder.com/1200x600"
-                width="600"
+                src="https://res.cloudinary.com/endersgame/image/upload/v1670972783/airbnb/logo2_zy1iiw.jpg"
+                width="638"
                 height=""
                 alt="alt_text"
                 border="0"
                 style="
                   width: 100%;
-                  max-width: 600px;
+                  max-width: 638px;
                   height: auto;
                   background: #dddddd;
                   font-family: sans-serif;
@@ -321,9 +308,9 @@
               />
             </td>
           </tr>
-          <!-- Hero Image, Flush : END -->
+          <!-- Logo Image : END -->
 
-          <!-- 1 Column Text + Button : BEGIN -->
+          <!-- Hero Header-1 : BEGIN -->
           <tr>
             <td style="background-color: #ffffff">
               <table
@@ -336,38 +323,188 @@
                 <tr>
                   <td
                     style="
-                      padding: 20px;
+                      padding: 30px 48px 0 48px;
                       font-family: sans-serif;
-                      font-size: 15px;
-                      line-height: 20px;
-                      color: #555555;
+                      font-size: 34px;
+                      line-height: 70px;
+                      color: #111111;
+                      font-weight: 900;
+                      text-align: center;
                     "
                   >
-                    <h1
-                      style="
-                        margin: 0 0 10px 0;
-                        font-family: sans-serif;
-                        font-size: 25px;
-                        line-height: 30px;
-                        color: #333333;
-                        font-weight: normal;
-                      "
-                    >
-                      Praesent laoreet malesuada&nbsp;cursus.
-                    </h1>
+                    <h1 style="margin: 0">Ones for the wishlist</h1>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Hero Header-1 : END -->
+
+          <!-- Hero Image : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff; padding-top: 60px">
+              <img
+                src="https://res.cloudinary.com/endersgame/image/upload/v1670968833/airbnb/homes_rxckut.gif"
+                width="638"
+                height=""
+                alt="alt_text"
+                border="0"
+                style="
+                  width: 100%;
+                  max-width: 638px;
+                  height: auto;
+                  background: #ffffff;
+                  font-family: sans-serif;
+                  font-size: 15px;
+                  line-height: 15px;
+                  color: #555555;
+                  margin: auto;
+                  display: block;
+                "
+                class="g-img"
+              />
+            </td>
+          </tr>
+          <!-- Hero Image : END -->
+
+          <!-- Hero Paragraph : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff">
+              <table
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+              >
+                <tr>
+                  <td
+                    style="
+                      padding: 30px 48px 0 48px;
+                      font-family: sans-serif;
+                      font-size: 18px;
+                      font-weight: 400;
+                      color: #0e0e0e;
+                      text-align: center;
+                      line-height: 28px;
+                    "
+                  >
                     <p style="margin: 0">
-                      Maecenas sed ante pellentesque, posuere leo id, eleifend
-                      dolor. Class aptent taciti sociosqu ad litora torquent per
-                      conubia nostra, per inceptos himenaeos. Praesent laoreet
-                      malesuada cursus. Maecenas scelerisque congue eros eu
-                      posuere. Praesent in felis ut velit pretium lobortis
-                      rhoncus ut&nbsp;erat.
+                      Sometimes, the best gift is one you can look forward to
+                      for a few months. Get ahead of your family’s holiday plans
+                      with these categories—from cozy mountain marvels with a
+                      hot tub to refreshing tropical escapes with private pools.
                     </p>
                   </td>
                 </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Hero Paragraph : END -->
+
+          <!-- Section 1 : BEGIN -->
+          <!-- Section 1 Image : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff; padding-top: 100px">
+              <img
+                src="https://res.cloudinary.com/endersgame/image/upload/v1670968881/airbnb/person_smiling_vltcwp.png"
+                width="638"
+                height=""
+                alt="alt_text"
+                border="0"
+                style="
+                  width: 100%;
+                  max-width: 638px;
+                  height: auto;
+                  background: #ffffff;
+                  font-family: sans-serif;
+                  font-size: 15px;
+                  line-height: 15px;
+                  color: #555555;
+                  margin: auto;
+                  display: block;
+                "
+                class="g-img"
+              />
+            </td>
+          </tr>
+          <!-- Section 1 Image : END -->
+
+          <!-- Section 1 Header-2 : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff">
+              <table
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+              >
+                <tr>
+                  <td
+                    style="
+                      padding: 48px 48px 0 48px;
+                      font-family: sans-serif;
+                      color: #111111;
+                      text-align: center;
+                    "
+                  >
+                    <h2 style="margin: 0; font-size: 32px; font-weight: 600">
+                      Ski stays with hot tubs
+                    </h2>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Section 1 Header-2 : END -->
+
+          <!-- Section 1 Paragraph : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 24px 48px 0 48px">
+              <table
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+              >
+                <tr>
+                  <td
+                    style="
+                      font-family: sans-serif;
+                      font-size: 18px;
+                      font-weight: 400;
+                      color: #0e0e0e;
+                      text-align: center;
+                      line-height: 28px;
+                    "
+                  >
+                    <p style="margin: 0">
+                      A snowy wonderland is close to your front door here. Try
+                      out your first bunny hill or tackle the black diamonds
+                      knowing there’s a hot tub waiting for you at the end of
+                      the day.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Section 1 Paragraph : END -->
+
+          <!-- Section 1 Button : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 24px 48px 0 48px">
+              <table
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+              >
                 <tr>
                   <td style="padding: 0 20px">
-                    <!-- Button : BEGIN -->
                     <table
                       align="center"
                       role="presentation"
@@ -379,210 +516,67 @@
                       <tr>
                         <td
                           class="button-td button-td-primary"
-                          style="border-radius: 4px; background: #222222"
+                          style="border-radius: 10px; background: #222222"
                         >
                           <a
                             class="button-a button-a-primary"
                             href="https://google.com/"
                             style="
-                              background: #222222;
-                              border: 1px solid #000000;
+                              background: #ffffff;
+                              border: 1px solid #222222;
                               font-family: sans-serif;
-                              font-size: 15px;
-                              line-height: 15px;
+                              font-size: 18px;
+                              font-weight: 400;
+                              line-height: 0;
+                              margin: 0;
                               text-decoration: none;
-                              padding: 13px 17px;
-                              color: #ffffff;
+                              padding: 25px 20px;
+                              color: #222222;
                               display: block;
-                              border-radius: 4px;
+                              border-radius: 10px;
                             "
-                            >Primary Button</a
+                            >Hit the slopes</a
                           >
                         </td>
                       </tr>
                     </table>
-                    <!-- Button : END -->
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="
-                      padding: 20px;
-                      font-family: sans-serif;
-                      font-size: 15px;
-                      line-height: 20px;
-                      color: #555555;
-                    "
-                  >
-                    <h2
-                      style="
-                        margin: 0 0 10px 0;
-                        font-family: sans-serif;
-                        font-size: 18px;
-                        line-height: 22px;
-                        color: #333333;
-                        font-weight: bold;
-                      "
-                    >
-                      Praesent in felis ut velit pretium lobortis rhoncus
-                      ut&nbsp;erat.
-                    </h2>
-                    <ul
-                      style="
-                        padding: 0;
-                        margin: 0 0 10px 0;
-                        list-style-type: disc;
-                      "
-                    >
-                      <li style="margin: 0 0 10px 30px" class="list-item-first">
-                        A list item.
-                      </li>
-                      <li style="margin: 0 0 10px 30px">
-                        Another list item here.
-                      </li>
-                      <li style="margin: 0 0 0 30px" class="list-item-last">
-                        Everyone gets a list item, list items for everyone!
-                      </li>
-                    </ul>
-                    <p style="margin: 0">
-                      Maecenas sed ante pellentesque, posuere leo id, eleifend
-                      dolor. Class aptent taciti sociosqu ad litora torquent per
-                      conubia nostra, per inceptos himenaeos. Praesent laoreet
-                      malesuada cursus. Maecenas scelerisque congue eros eu
-                      posuere. Praesent in felis ut velit pretium lobortis
-                      rhoncus ut&nbsp;erat.
-                    </p>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
-          <!-- 1 Column Text + Button : END -->
+          <!-- Section 1 Button : END -->
+          <!-- Section 1 : END -->
 
-          <!-- 2 Even Columns : BEGIN -->
+          <!-- Section 2 : BEGIN -->
+          <!-- Section 2 Image : BEGIN -->
           <tr>
-            <td style="padding: 0 10px 40px 10px; background-color: #ffffff">
-              <table
-                role="presentation"
+            <td style="background-color: #ffffff; padding-top: 100px">
+              <img
+                src="https://res.cloudinary.com/endersgame/image/upload/v1670968909/airbnb/four_people_k5ttdl.png"
+                width="638"
+                height=""
+                alt="alt_text"
                 border="0"
-                cellpadding="0"
-                cellspacing="0"
-                width="100%"
-              >
-                <tr>
-                  <td valign="top" width="50%">
-                    <table
-                      role="presentation"
-                      cellspacing="0"
-                      cellpadding="0"
-                      border="0"
-                      width="100%"
-                    >
-                      <tr>
-                        <td style="text-align: center; padding: 0 10px">
-                          <img
-                            src="https://via.placeholder.com/200"
-                            width="200"
-                            height=""
-                            alt="alt_text"
-                            border="0"
-                            style="
-                              width: 100%;
-                              max-width: 200px;
-                              background: #dddddd;
-                              font-family: sans-serif;
-                              font-size: 15px;
-                              line-height: 15px;
-                              color: #555555;
-                            "
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          style="
-                            text-align: left;
-                            font-family: sans-serif;
-                            font-size: 15px;
-                            line-height: 20px;
-                            color: #555555;
-                            padding: 10px 10px 0;
-                          "
-                        >
-                          <p style="margin: 0">
-                            Maecenas sed ante pellentesque, posuere leo id,
-                            eleifend dolor.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td valign="top" width="50%">
-                    <table
-                      role="presentation"
-                      cellspacing="0"
-                      cellpadding="0"
-                      border="0"
-                      width="100%"
-                    >
-                      <tr>
-                        <td style="text-align: center; padding: 0 10px">
-                          <img
-                            src="https://via.placeholder.com/200"
-                            width="200"
-                            height=""
-                            alt="alt_text"
-                            border="0"
-                            style="
-                              width: 100%;
-                              max-width: 200px;
-                              background: #dddddd;
-                              font-family: sans-serif;
-                              font-size: 15px;
-                              line-height: 15px;
-                              color: #555555;
-                            "
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          style="
-                            text-align: left;
-                            font-family: sans-serif;
-                            font-size: 15px;
-                            line-height: 20px;
-                            color: #555555;
-                            padding: 10px 10px 0;
-                          "
-                        >
-                          <p style="margin: 0">
-                            Maecenas sed ante pellentesque, posuere leo id,
-                            eleifend dolor.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
+                style="
+                  width: 100%;
+                  max-width: 638px;
+                  height: auto;
+                  background: #ffffff;
+                  font-family: sans-serif;
+                  font-size: 15px;
+                  line-height: 15px;
+                  color: #555555;
+                  margin: auto;
+                  display: block;
+                "
+                class="g-img"
+              />
             </td>
           </tr>
-          <!-- 2 Even Columns : END -->
+          <!-- Section 2 Image : END -->
 
-          <!-- Clear Spacer : BEGIN -->
-          <tr>
-            <td
-              aria-hidden="true"
-              height="40"
-              style="font-size: 0px; line-height: 0px"
-            >
-              &nbsp;
-            </td>
-          </tr>
-          <!-- Clear Spacer : END -->
-
-          <!-- 1 Column Text : BEGIN -->
+          <!-- Section 2 Header-2 : BEGIN -->
           <tr>
             <td style="background-color: #ffffff">
               <table
@@ -595,101 +589,25 @@
                 <tr>
                   <td
                     style="
-                      padding: 20px;
+                      padding: 48px 48px 0 48px;
                       font-family: sans-serif;
-                      font-size: 15px;
-                      line-height: 20px;
-                      color: #555555;
+                      color: #111111;
+                      text-align: center;
                     "
                   >
-                    <p style="margin: 0">
-                      Maecenas sed ante pellentesque, posuere leo id, eleifend
-                      dolor. Class aptent taciti sociosqu ad litora torquent per
-                      conubia nostra, per inceptos himenaeos. Praesent laoreet
-                      malesuada cursus. Maecenas scelerisque congue eros eu
-                      posuere. Praesent in felis ut velit pretium lobortis
-                      rhoncus ut&nbsp;erat.
-                    </p>
+                    <h2 style="margin: 0; font-size: 32px; font-weight: 600">
+                      Cabins with room to spread out
+                    </h2>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
-          <!-- 1 Column Text : END -->
-        </table>
-        <!-- Email Body : END -->
+          <!-- Section 2 Header-2 : END -->
 
-        <!-- Email Footer : BEGIN -->
-        <table
-          align="center"
-          role="presentation"
-          cellspacing="0"
-          cellpadding="0"
-          border="0"
-          width="100%"
-          style="margin: auto"
-        >
+          <!-- Section 2 Paragraph : BEGIN -->
           <tr>
-            <td
-              style="
-                padding: 20px;
-                font-family: sans-serif;
-                font-size: 12px;
-                line-height: 15px;
-                text-align: center;
-                color: #ffffff;
-              "
-            >
-              <webversion
-                style="
-                  color: #ffffff;
-                  text-decoration: underline;
-                  font-weight: bold;
-                "
-                >View as a Web Page</webversion
-              >
-              <br /><br />
-              Company Name<br /><span class="unstyle-auto-detected-links"
-                >123 Fake Street, SpringField, OR, 97477 US<br />(123)
-                456-7890</span
-              >
-              <br /><br />
-              <unsubscribe style="color: #ffffff; text-decoration: underline"
-                >unsubscribe</unsubscribe
-              >
-            </td>
-          </tr>
-        </table>
-        <!-- Email Footer : END -->
-
-        <!--[if mso]>
-            </td>
-            </tr>
-            </table>
-            <![endif]-->
-      </div>
-
-      <!-- Full Bleed Background Section : BEGIN -->
-      <table
-        role="presentation"
-        cellspacing="0"
-        cellpadding="0"
-        border="0"
-        width="100%"
-        style="background-color: #709f2b"
-      >
-        <tr>
-          <td>
-            <div
-              align="center"
-              style="max-width: 600px; margin: auto"
-              class="email-container"
-            >
-              <!--[if mso]>
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
-                        <tr>
-                        <td>
-                        <![endif]-->
+            <td style="background-color: #ffffff; padding: 24px 48px 0 48px">
               <table
                 role="presentation"
                 cellspacing="0"
@@ -700,36 +618,591 @@
                 <tr>
                   <td
                     style="
-                      padding: 20px;
-                      text-align: left;
                       font-family: sans-serif;
-                      font-size: 15px;
-                      line-height: 20px;
-                      color: #ffffff;
+                      font-size: 18px;
+                      font-weight: 400;
+                      color: #0e0e0e;
+                      text-align: center;
+                      line-height: 28px;
                     "
                   >
                     <p style="margin: 0">
-                      Maecenas sed ante pellentesque, posuere leo id, eleifend
-                      dolor. Class aptent taciti sociosqu ad litora torquent per
-                      conubia nostra, per inceptos himenaeos. Praesent laoreet
-                      malesuada cursus. Maecenas scelerisque congue eros eu
-                      posuere. Praesent in felis ut velit pretium lobortis
-                      rhoncus ut&nbsp;erat.
+                      Gather the whole family with plenty of cozy spaces to
+                      catch up—and private rooms to do your own thing. Indulge
+                      in a festive movie marathon together, open presents, or
+                      pop outside at night to make your holiday wishes on the
+                      stars.
                     </p>
                   </td>
                 </tr>
               </table>
-              <!--[if mso]>
-                        </td>
-                        </tr>
-                        </table>
-                        <![endif]-->
-            </div>
-          </td>
-        </tr>
-      </table>
-      <!-- Full Bleed Background Section : END -->
+            </td>
+          </tr>
+          <!-- Section 2 Paragraph : END -->
 
+          <!-- Section 2 Button : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 24px 48px 0 48px">
+              <table
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+              >
+                <tr>
+                  <td style="padding: 0 20px">
+                    <table
+                      align="center"
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      style="margin: auto"
+                    >
+                      <tr>
+                        <td
+                          class="button-td button-td-primary"
+                          style="border-radius: 10px; background: #222222"
+                        >
+                          <a
+                            class="button-a button-a-primary"
+                            href="https://google.com/"
+                            style="
+                              background: #ffffff;
+                              border: 1px solid #222222;
+                              font-family: sans-serif;
+                              font-size: 18px;
+                              font-weight: 400;
+                              line-height: 0;
+                              margin: 0;
+                              text-decoration: none;
+                              padding: 25px 20px;
+                              color: #222222;
+                              display: block;
+                              border-radius: 10px;
+                            "
+                            >Stay in</a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Section 2 Button : END -->
+          <!-- Section 2 : END -->
+
+          <!-- Section 3 : BEGIN -->
+          <!-- Section 3 Image : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff; padding-top: 100px">
+              <img
+                src="https://res.cloudinary.com/endersgame/image/upload/v1670968937/airbnb/person_beach_brkagt.png"
+                width="638"
+                height=""
+                alt="alt_text"
+                border="0"
+                style="
+                  width: 100%;
+                  max-width: 638px;
+                  height: auto;
+                  background: #ffffff;
+                  font-family: sans-serif;
+                  font-size: 15px;
+                  line-height: 15px;
+                  color: #555555;
+                  margin: auto;
+                  display: block;
+                "
+                class="g-img"
+              />
+            </td>
+          </tr>
+          <!-- Section 3 Image : END -->
+
+          <!-- Section 3 Header-2 : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff">
+              <table
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+              >
+                <tr>
+                  <td
+                    style="
+                      padding: 48px 48px 0 48px;
+                      font-family: sans-serif;
+                      color: #111111;
+                      text-align: center;
+                    "
+                  >
+                    <h2 style="margin: 0; font-size: 32px; font-weight: 600">
+                      Tropical homes with pools
+                    </h2>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Section 3 Header-2 : END -->
+
+          <!-- Section 3 Paragraph : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 24px 48px 0 48px">
+              <table
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+              >
+                <tr>
+                  <td
+                    style="
+                      font-family: sans-serif;
+                      font-size: 18px;
+                      font-weight: 400;
+                      color: #0e0e0e;
+                      text-align: center;
+                      line-height: 28px;
+                      letter-spacing: 0.5px;
+                    "
+                  >
+                    <p style="margin: 0">
+                      Pools turn your holiday into a private paradise. Head for
+                      the tropics and leave all to-dos behind as you dip in the
+                      sparkling waters and enjoy all the warmth of the holidays.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Section 3 Paragraph : END -->
+
+          <!-- Section 3 Button : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 24px 48px 0 48px">
+              <table
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+              >
+                <tr>
+                  <td style="padding: 0 20px">
+                    <table
+                      align="center"
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      style="margin: auto"
+                    >
+                      <tr>
+                        <td
+                          class="button-td button-td-primary"
+                          style="border-radius: 10px; background: #222222"
+                        >
+                          <a
+                            class="button-a button-a-primary"
+                            href="https://google.com/"
+                            style="
+                              background: #ffffff;
+                              border: 1px solid #222222;
+                              font-family: sans-serif;
+                              font-size: 18px;
+                              font-weight: 400;
+                              line-height: 0;
+                              margin: 0;
+                              text-decoration: none;
+                              padding: 25px 20px;
+                              color: #222222;
+                              display: block;
+                              border-radius: 10px;
+                            "
+                            >Splash away!</a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Section 3 Button : END -->
+          <!-- Section 3 : END -->
+
+          <!-- Horizontal Line : BEGIN -->
+          <tr>
+            <td style="padding: 80px 48px 0 48px">
+              <hr
+                style="
+                  border-width: 0;
+                  background: #dfdfdf;
+                  color: #dfdfdf;
+                  height: 1px;
+                "
+              />
+            </td>
+          </tr>
+          <!-- Horizontal Line : END -->
+
+          <!-- AirCover Logo : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff">
+              <img
+                src="https://res.cloudinary.com/endersgame/image/upload/v1670981392/airbnb/aircover3_rabvne.png"
+                width="638"
+                height=""
+                alt="alt_text"
+                border="0"
+                style="
+                  width: 100%;
+                  max-width: 638px;
+                  height: auto;
+                  background: #ffffff;
+                  font-family: sans-serif;
+                  font-size: 15px;
+                  line-height: 15px;
+                  color: #555555;
+                  margin: auto;
+                  display: block;
+                "
+                class="g-img"
+              />
+            </td>
+          </tr>
+          <!-- AirCover Logo : END -->
+
+          <!-- AirCover Paragraph : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 15px 48px 0 48px">
+              <table
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+              >
+                <tr>
+                  <td
+                    style="
+                      font-family: sans-serif;
+                      font-size: 18px;
+                      font-weight: 400;
+                      color: #0e0e0e;
+                      text-align: left;
+                      line-height: 28px;
+                      letter-spacing: 0.5px;
+                    "
+                  >
+                    <p style="margin: 0">
+                      Every Airbnb booking includes
+                      <strong
+                        ><a
+                          href="#"
+                          style="text-decoration: underline; color: #0e0e0e"
+                          >AirCover</a
+                        ></strong
+                      >—free protection from Host cancellations, listing
+                      inaccuracies, and other issues like trouble checking in.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- AirCover Paragraph : END -->
+
+          <!-- Horizontal Line : BEGIN -->
+          <tr>
+            <td style="padding: 35px 48px 0 48px">
+              <hr
+                style="
+                  border-width: 0;
+                  background: #dfdfdf;
+                  color: #dfdfdf;
+                  height: 1px;
+                "
+              />
+            </td>
+          </tr>
+          <!-- Horizontal Line : END -->
+
+          <!-- Footer : BEGIN -->
+          <!-- Container Logo/Social Media : BEGIN -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 30px 48px 0 48px">
+              <table
+                bgcolor="#ffffff"
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+                align="left"
+              >
+                <tr>
+                  <!-- Logo : BEGIN -->
+                  <td>
+                    <table
+                      bgcolor="#ffffff"
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <td>
+                          <img
+                            src="https://res.cloudinary.com/endersgame/image/upload/v1670968991/airbnb/logo4_gytbrb.png"
+                            width="32"
+                            height="32"
+                            alt="alt_text"
+                            border="0"
+                            align="left"
+                            style="
+                              width: 100%;
+                              max-width: 32px;
+                              height: auto;
+                              background: #ffffff;
+                              font-family: sans-serif;
+                              font-size: 15px;
+                              line-height: 15px;
+                              color: #555555;
+                              margin: auto;
+                              display: block;
+                            "
+                            class="g-img"
+                          />
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <!-- Logo : END -->
+
+                  <!-- Social Media : BEGIN -->
+                  <td>
+                    <table
+                      bgcolor="#ffffff"
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                      style="max-width: 90px"
+                      align="right"
+                    >
+                      <tr>
+                        <td>
+                          <a href="#">
+                            <img
+                              src="https://res.cloudinary.com/endersgame/image/upload/v1670969012/airbnb/facebook_dztfbu.png"
+                              width="20"
+                              height="20"
+                              alt="alt_text"
+                              border="0"
+                              style="display: block"
+                              align="right"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <img
+                              src="https://res.cloudinary.com/endersgame/image/upload/v1670969012/airbnb/instagram_flyjhf.png"
+                              width="20"
+                              height="20"
+                              alt="alt_text"
+                              border="0"
+                              style="display: block"
+                              align="right"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <img
+                              src="https://res.cloudinary.com/endersgame/image/upload/v1670969012/airbnb/twitter_pnqi3a.png"
+                              width="20"
+                              height="20"
+                              alt="alt_text"
+                              border="0"
+                              style="display: block"
+                              align="right"
+                            />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <!-- Social Media : END -->
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Container Logo/Social Media : END -->
+          <!-- Container Address : BEGIN -->
+          <tr>
+            <td>
+              <table
+                bgcolor="#ffffff"
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+                style="
+                  font-family: sans-serif;
+                  font-size: 15px;
+                  letter-spacing: 0.5px;
+                "
+              >
+                <tr>
+                  <td style="padding: 20px 48px 0 48px">
+                    <p>
+                      Airbnb, Inc. <br />
+                      888 Brannan St.<br />
+                      San Francisco, CA 94103, USA <br />
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Container Address : END -->
+
+          <!-- App Paragraph : BEGIN -->
+          <tr>
+            <td>
+              <table
+                bgcolor="#ffffff"
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+                style="font-family: sans-serif; font-size: 15px"
+              >
+                <tr>
+                  <td style="padding: 0 48px">
+                    <p>
+                      <strong> Get the Airbnb app </strong>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- App Paragraph : END -->
+
+          <!-- App Download Images : BEGIN -->
+          <td style="padding: 5px 48px 0 48px">
+            <table
+              bgcolor="#ffffff"
+              role="presentation"
+              cellspacing="0"
+              cellpadding="0"
+              border="0"
+              width="100%"
+              align="left"
+              style="max-width: 280px"
+            >
+              <tr>
+                <td>
+                  <a href="#">
+                    <img
+                      src="https://res.cloudinary.com/endersgame/image/upload/v1670969031/airbnb/apple_app_store_ivqtvb.png"
+                      width="120"
+                      height="40"
+                      alt="alt_text"
+                      border="0"
+                      style="display: block"
+                    />
+                  </a>
+                </td>
+                <td>
+                  <a href="#">
+                    <img
+                      src="https://res.cloudinary.com/endersgame/image/upload/v1670969036/airbnb/google_play_c5btmb.png"
+                      width="133"
+                      height="40"
+                      alt="alt_text"
+                      border="0"
+                      style="display: block"
+                    />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <!-- App Download Images : END -->
+
+          <!-- Unsubscribe : BEGIN -->
+          <tr>
+            <td style="padding: 20px 48px 20px 48px">
+              <table
+                bgcolor="#ffffff"
+                role="presentation"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                width="100%"
+                style="font-family: sans-serif; font-size: 15px"
+              >
+                <tr>
+                  <td>
+                    <p>
+                      Update your
+                      <a
+                        href="#"
+                        style="
+                          text-decoration: underline;
+                          color: #111111;
+                          font-weight: 600;
+                        "
+                        >email preferences</a
+                      >
+                      to choose which emails you get or
+                      <a
+                        href="#"
+                        style="
+                          text-decoration: underline;
+                          color: #111111;
+                          font-weight: 600;
+                        "
+                        >unsubscribe</a
+                      >
+                      from this type of email.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Unsubscribe : END -->
+          <!-- Footer : END -->
+        </table>
+        <!-- Email Body : END -->
+
+        <!-- Email Footer : END -->
+
+        <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+      </div>
       <!--[if mso | IE]>
     </td>
     </tr>
